@@ -1,16 +1,20 @@
-## Hi there 👋
+# Hello, I'm Rafael Antonio da Silva! 👋
 
-<!--
-**rafaelfullstackdeveloper/rafaelfullstackdeveloper** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Full Stack Python Developer passionate about crafting web apps and automations. Graduated in Full Stack Development. Seeking to build scalable solutions.
 
-Here are some ideas to get you started:
+## 🛠 Technologies
+- **Back-end**: Python, Django, Flask
+- **Front-end**: HTML, CSS, JavaScript, Bootstrap, ReactJS
+- **Other**:  PHP, Ruby, Pygame, Git, PostgreSQL, Tkinter
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📚 Main Projects
+- **[E-commerce Platform 1](https://github.com/rafaelfullstackdeveloper/ecommerce-django)**: Online store built with Django and PostgreSQL, featuring user authentication and product management.
+- **[E-commerce Platform 2](https://github.com/rafaelfullstackdeveloper/ecommerce-flask)**: Dynamic sales platform with cart functionality using Flask and JavaScript.
+- **[3D Fireworks](https://github.com/rafaelfullstackdeveloper/fireworks-3d)**: Python script creating interactive 3D fireworks visualizations with Pygame.
+- **[News Portal](https://github.com/rafaelfullstackdeveloper/news-portal)**: Responsive news portal layout designed with HTML, CSS, and JavaScript.
+
+## 📫 Get in Touch
+- Email: rafael.fullstackdeveloper@gmail.com
+- LinkedIn: https://www.linkedin.com/in/rafael-antonio-64066765/
+ 
+Full Stack Python Dev skilled in Django, Flask, & JS. Built e-commerce apps & 3D visualizations. Seeking to create scalable solutions. 🚀
