@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperos & Sabores - Loja Virtual</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c5f2d;
+            --secondary-color: #97bc62;
+            --accent-color: #ff6b35;
+            --text-dark: #2d3436;
+            --text-light: #636e72;
+            --bg-light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1e4620 100%);
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(44, 95, 45, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--secondary-color) !important;
+            transform: translateY(-1px);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1e4620 100%);
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="spice" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="1000" height="1000" fill="url(%23spice)"/></svg>');
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .btn-primary-custom {
+            background: linear-gradient(135deg, var(--accent-color) 0%, #e55a2b 100%);
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-primary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+        }
+
+        .search-box {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .search-input {
+            border-radius: 50px;
+            padding: 15px 25px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .search-btn {
+            border-radius: 50px;
+            padding: 15px 30px;
+            background: var(--accent-color);
+            border: none;
+            margin-left: -50px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .categories-section {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            height: 100%;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .category-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #8ba856 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .products-section {
+            padding: 80px 0;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            height: 100%;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image {
+            height: 200px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--text-light);
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .btn-cart {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-cart:hover {
+            background: #1e4620;
+            transform: translateY(-1px);
+        }
+
+        .features-section {
+            background: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer h5 {
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--secondary-color);
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-seedling me-2"></i>Temperos & Sabores
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> <span class="badge bg-danger">3</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Temperos Especiais para Sabores Únicos</h1>
+                        <p class="hero-subtitle">Descubra nossa seleção premium de temperos, especiarias e condimentos que vão transformar suas receitas</p>
+                        <a href="#produtos" class="btn btn-primary-custom">
+                            <i class="fas fa-shopping-bag me-2"></i>Comprar Agora
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="search-box">
+                        <div class="input-group">
+                            <input type="text" class="form-control search-input" placeholder="Busque por temperos, especiarias...">
+                            <button class="btn search-btn" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categorias" class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Nossas Categorias</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <h3 class="category-title">Pimentas</h3>
+                        <p class="text-muted">Pimentas frescas e secas para dar aquele toque especial</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="category-title">Ervas</h3>
+                        <p class="text-muted">Ervas aromáticas frescas e desidratadas</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-mortar-pestle"></i>
+                        </div>
+                        <h3 class="category-title">Especiarias</h3>
+                        <p class="text-muted">Especiarias exóticas de todo o mundo</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-bottle-droplet"></i>
+                        </div>
+                        <h3 class="category-title">Molhos</h3>
+                        <p class="text-muted">Molhos artesanais e condimentos especiais</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Produtos em Destaque</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Pimenta Caiena Premium</h4>
+                            <div class="product-price">R$ 15,90</div>
+                            <button class="btn btn-cart">
+                                <i class="fas fa-cart-plus me-2"></i>Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Manjericão Desidratado</h4>
+                            <div class="product-price">R$ 12,50</div>
+                            <button class="btn btn-cart">
+                                <i class="fas fa-cart-plus me-2"></i>Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-mortar-pestle"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Curry em Pó Especial</h4>
+                            <div class="product-price">R$ 18,90</div>
+                            <button class="btn btn-cart">
+                                <i class="fas fa-cart-plus me-2"></i>Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-bottle-droplet"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Molho de Pimenta Artesanal</h4>
+                            <div class="product-price">R$ 22,90</div>
+                            <button class="btn btn-cart">
+                                <i class="fas fa-cart-plus me-2"></i>Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Açafrão Premium</h4>
+                            <div class="product-price">R$ 45,90</div>
+                            <button class="btn btn-cart">
+                                <i class="fas fa-cart-plus me-2"></i>Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Orégano Artesanal</h4>
+                            <div class="product-price">R$ 14,90</div>
+                            <button class="btn btn-cart">
+                                <i class="fas fa-cart-plus me-2"></i>Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Páprica Defumada</h4>
+                            <div class="product-price">R$ 16,90</div>
+                            <button class="btn btn-cart">
+                                <i class="fas fa-cart-plus me-2"></i>Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Mix de Especiarias</h4>
+                            <div class="product-price">R$ 19,90</div>
+                            <button class="btn btn-cart">
+                                <i class="fas fa-cart-plus me-2"></i>Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h4>Entrega Rápida</h4>
+                        <p>Entregamos em até 48h para todo o Brasil</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>Qualidade Premium</h4>
+                        <p>Produtos selecionados e de alta qualidade</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Compra Segura</h4>
+                        <p>Pagamento 100% seguro e protegido</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Suporte 24/7</h4>
+                        <p>Atendimento especializado sempre disponível</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="fas fa-seedling me-2"></i>Temperos & Sabores</h5>
+                    <p>Sua loja especializada em temperos, especiarias e condimentos premium. Transformando sabores, criando experiências.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Categorias</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Pimentas</a></li>
+                        <li><a href="#">Ervas</a></li>
+                        <li><a href="#">Especiarias</a></li>
+                        <li><a href="#">Molhos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contato</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Rua dos Temperos, 123<br>São Paulo - SP</p>
+                    <p><i class="fas fa-phone me-2"></i>(11) 9999-9999</p>
+                    <p><i class="fas fa-envelope me-2"></i>contato@temperosesabores.com</p>
+                </div>
+            </div>
+            <hr style="border-color: #333;">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 Temperos & Sabores. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'linear-gradient(135deg, rgba(44, 95, 45, 0.95) 0%, rgba(30, 70, 32, 0.95) 100%)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.background = 'linear-gradient(135deg, var(--primary-color) 0%, #1e4620 100%)';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
+
+        // Cart functionality simulation
+        let cartCount = 3;
+        document.querySelectorAll('.btn-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                cartCount++;
+                document.querySelector('.badge').textContent = cartCount;
+                
+                // Add visual feedback
+                this.innerHTML = '<i class="fas fa-check me-2"></i>Adicionado!';
+                this.style.background = '#28a745';
+                
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-cart-plus me-2"></i>Adicionar';
+                    this.style.background = '';
+                }, 2000);
+            });
+        });
+
+        // Search functionality
+        document.querySelector('.search-btn').addEventListener('click', function() {
+            const searchTerm = document.querySelector('.search-input').value;
+            if (searchTerm) {
+                alert(`Buscando por: ${searchTerm}`);
+            }
+        });
+
+        document.querySelector('.search-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.querySelector('.search-btn').click();
+            }
+        });
+    </script>
+</body>
+</html>
