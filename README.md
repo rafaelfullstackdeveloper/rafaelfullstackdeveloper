@@ -115,11 +115,13 @@ Developed enterprise web applications for event management:
 🌟 What Sets Me Apart
 
 pythonclass RafaelDeveloper:
+
     def __init__(self):
         self.experience = "10+ years"
         self.specialties = ["Python/Django", "Full-Stack Development", "EdTech", "E-commerce"]
         self.leadership = ["Tech Lead", "Mentoring", "Digital Transformation"]
         self.languages = ["Portuguese (Native)", "English (B2)", "Japanese (N4)"]      
+        
     def current_focus(self):
         return [
             "Cloud Architecture (AWS)",
@@ -127,6 +129,7 @@ pythonclass RafaelDeveloper:
             "AI/ML Integration",
             "DevOps & Automation"
         ]        
+
     def seeking_opportunities(self):
         return ["Senior Developer", "Tech Lead", "Python Specialist", "Full-Stack Developer"]
 
