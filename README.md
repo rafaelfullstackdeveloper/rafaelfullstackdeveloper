@@ -10,7 +10,7 @@ Senior Full-Stack Developer | Python Specialist | Tech Lead
 
 🎯 About Me
 
-    Senior Full-Stack Developer with 10+ years of experience specializing in Python/Django and modern web technologies. I've successfully transformed complex business requirements into scalable solutions, managing systems for 2,500+ users and leading digital transformations that saved $500K annually.
+Senior Full-Stack Developer with 10+ years of experience specializing in Python/Django and modern web technologies. I've successfully transformed complex business requirements into scalable solutions, managing systems for 2,500+ users and leading digital transformations that saved $500K annually.
 
 🏆 Leadership Impact
 
@@ -115,21 +115,18 @@ Developed enterprise web applications for event management:
 🌟 What Sets Me Apart
 
 pythonclass RafaelDeveloper:
-
     def __init__(self):
         self.experience = "10+ years"
         self.specialties = ["Python/Django", "Full-Stack Development", "EdTech", "E-commerce"]
         self.leadership = ["Tech Lead", "Mentoring", "Digital Transformation"]
-        self.languages = ["Portuguese (Native)", "English (B2)", "Japanese (N4)"]
-        
+        self.languages = ["Portuguese (Native)", "English (B2)", "Japanese (N4)"]      
     def current_focus(self):
         return [
             "Cloud Architecture (AWS)",
             "Microservices & Scalability",
             "AI/ML Integration",
             "DevOps & Automation"
-        ]
-        
+        ]        
     def seeking_opportunities(self):
         return ["Senior Developer", "Tech Lead", "Python Specialist", "Full-Stack Developer"]
 
@@ -145,7 +142,7 @@ pythonclass RafaelDeveloper:
 
 📬 Let's Connect!
 
-   I'm always open to discussing new opportunities, collaborating on interesting projects, or sharing knowledge about Python development and system architecture.
+I'm always open to discussing new opportunities, collaborating on interesting projects, or sharing knowledge about Python development and system architecture.
 Available for: Senior Developer | Tech Lead | Python Specialist | Full-Stack Developer roles
 
 <div align="center">
