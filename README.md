@@ -1,7 +1,8 @@
-# Olá! Eu sou o Rafael Antonio da Silva 👋
+# Hi there! I'm Rafael Antonio da Silva 👋
+<p align="center">A special welcome! You can also <a href="README-pt.md">read my profile in Portuguese</a>. 🇧🇷</p>
 
 <div align="center">
-  <h3>Desenvolvedor Full-Stack Sênior | Especialista Python | Tech Lead</h3>
+  <h3>Senior Full-Stack Developer | Python Specialist | Tech Lead</h3>
 </div>
 
 <div align="center">
@@ -13,100 +14,100 @@
   </a>
 </div>
 
-## 💡 Sobre Mim
+## 💡 About Me
 
-Com mais de 10 anos de experiência, sou especialista em transformar requisitos de negócio complexos em soluções web escaláveis e eficientes, com foco principal em **Python/Django**. Já liderei projetos de transformação digital que geraram economias de mais de **R$ 2.5 Milhões** (US$ 500K) e arquitetei sistemas robustos para milhares de usuários.
+With over 10 years of experience, I specialize in transforming complex business requirements into scalable and efficient web solutions, with a primary focus on **Python/Django**. I have led digital transformation projects that generated over **$500K in annual savings** and have architected robust systems for thousands of users.
 
-**Principais Destaques:**
-* 🚀 Liderei **3 projetos de transformação digital** completos, otimizando processos e custos.
-* 🏗️ Arquitetei microsserviços para suportar mais de **50.000 usuários concorrentes**.
-* 👥 Mentei mais de **15 desenvolvedores júnior**, com uma taxa de retenção de 90%.
-* 💰 Reduzi custos de infraestrutura em **60%** através de otimizações na nuvem (AWS).
+**Key Highlights:**
+* 🚀 Led **3 full digital transformation projects**, optimizing processes and significantly cutting costs.
+* 🏗️ Architected microservices to support over **50,000 concurrent users**.
+* 👥 Mentored **15+ junior developers**, achieving a 90% team retention rate.
+* 💰 Slashed infrastructure costs by **60%** through strategic cloud optimizations on AWS.
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas
+## 🛠️ Tech Stack & Tools
 
-* **Linguagens & Frameworks:**
+* **Languages & Frameworks:**
     * **Python:** Django, Flask, FastAPI
     * **JavaScript:** React.js, Node.js, jQuery
-    * **Outras:** PHP (Laravel), Ruby on Rails, HTML5/CSS3
+    * **Others:** PHP (Laravel), Ruby on Rails, HTML5/CSS3
 
-* **Bancos de Dados:**
+* **Databases:**
     * PostgreSQL, MySQL, SQL Server, SQLite
-    * (Otimização de Queries, Modelagem e Migração de Dados)
+    * (Query Optimization, Data Modeling & Migration)
 
 * **Cloud & DevOps:**
     * **AWS:** EC2, S3, RDS, Elastic Beanstalk
-    * **CI/CD:** Pipelines com Git/GitHub Actions
+    * **CI/CD:** Pipelines with Git/GitHub Actions
     * **Infra:** Linux (Ubuntu), Apache
-    * **Aprendendo:** Docker, Kubernetes
+    * **Learning:** Docker, Kubernetes
 
-* **Data Science & Automação:**
-    * **Análise:** Pandas, NumPy, Matplotlib
-    * **Automação:** Selenium, Openpyxl, PyODBC
-    * **IA/ML:** PyTorch, TensorFlow
+* **Data Science & Automation:**
+    * **Analysis:** Pandas, NumPy, Matplotlib
+    * **Automation:** Selenium, Openpyxl, PyODBC
+    * **AI/ML:** PyTorch, TensorFlow
     * **Desktop:** Tkinter
 
 ---
 
-## 🚀 Projetos em Destaque
+## 🚀 Featured Projects
 
 <details>
-<summary>🛒 <strong>Plataforma E-commerce com Integração de Pagamento</strong></summary>
+<summary>🛒 <strong>E-commerce Platform with Payment Integration</strong></summary>
 <br>
   <ul>
-    <li><strong>Tecnologias:</strong> Django, React.js, PostgreSQL, API PagSeguro.</li>
-    <li><strong>Impacto:</strong> Sistema utilizado por mais de 1.000 usuários ativos mensais, com melhoria de 15% na eficiência operacional.</li>
-    <li><strong>Funcionalidades:</strong> Catálogo completo, carrinho de compras, processamento seguro de pagamentos e um dashboard administrativo customizado.</li>
+    <li><strong>Tech Stack:</strong> Django, React.js, PostgreSQL, PagSeguro API.</li>
+    <li><strong>Impact:</strong> Serves 1,000+ monthly active users and improved operational efficiency by 15%.</li>
+    <li><strong>Features:</strong> Full product catalog, shopping cart, secure payment processing, and a custom admin dashboard.</li>
   </ul>
 </details>
 
 <details>
-<summary>🎓 <strong>Sistema de Gestão de Registros Acadêmicos</strong></summary>
+<summary>🎓 <strong>Academic Records Management System</strong></summary>
 <br>
   <ul>
-    <li><strong>Tecnologias:</strong> Python, Django, jQuery, Integração com Excel.</li>
-    <li><strong>Escala:</strong> Gerenciou mais de 2.500 alunos e 60 professores.</li>
-    <li><strong>Funcionalidades:</strong> Gestão de notas e registros de alunos, geração de relatórios automatizados e dashboard de análise de dados em tempo real.</li>
+    <li><strong>Tech Stack:</strong> Python, Django, jQuery, Excel Integration.</li>
+    <li><strong>Scale:</strong> Managed records for over 2,500 students and 60 professors.</li>
+    <li><strong>Features:</strong> Comprehensive grade/record management, automated reporting, and a real-time analytics dashboard.</li>
   </ul>
 </details>
 
 <details>
-<summary>📦 <strong>Sistema de Automação de Inventário</strong></summary>
+<summary>📦 <strong>Inventory Automation System</strong></summary>
 <br>
   <ul>
-    <li><strong>Tecnologias:</strong> Python, Selenium, Openpyxl.</li>
-    <li><strong>Impacto:</strong> Redução de 50% no tempo de processamento e 40% no trabalho manual.</li>
-    <li><strong>Funcionalidades:</strong> Extração automatizada de dados de múltiplas fontes, geração de relatórios inteligentes e rastreamento de inventário.</li>
+    <li><strong>Tech Stack:</strong> Python, Selenium, Openpyxl.</li>
+    <li><strong>Impact:</strong> Reduced data processing time by 50% and manual work by 40%.</li>
+    <li><strong>Features:</strong> Automated data extraction, intelligent report generation, and enterprise workflow automation.</li>
   </ul>
 </details>
 
 ---
 
-## 🎓 Educação e Certificações
+## 🎓 Education & Certifications
 
-* **AWS Solutions Architect Associate (SAA-C03)** - *Em Progresso* | 2025
+* **AWS Solutions Architect Associate (SAA-C03)** - *In Progress* | 2025
 * **Google Ads Certified (Search, Shopping, AI-Powered)** | 2024
-* **Superior em Gestão de TI** | Universidade Metropolitana de Santos
-* **Técnico em Desenvolvimento de Sistemas** | IFSP
+* **B.S. in IT Management** | Metropolitan University of Santos
+* **Technical Diploma in Systems Development** | IFSP
 
 ---
 
-## 📊 Estatísticas do GitHub
+## 📊 GitHub Stats
 
 <div align="center">
 
-![Estatísticas do GitHub de Rafael](https://github-readme-stats.vercel.app/api?username=rafaelfullstackdeveloper&show_icons=true&theme=radical&hide_border=true&locale=pt-br)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rafaelfullstackdeveloper&layout=compact&theme=radical&hide_border=true&locale=pt-br)
+![Rafael's GitHub stats](https://github-readme-stats.vercel.app/api?username=rafaelfullstackdeveloper&show_icons=true&theme=radical&hide_border=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rafaelfullstackdeveloper&layout=compact&theme=radical&hide_border=true)
 
 </div>
 
 ---
 
-## 📫 Vamos Conectar!
+## 📫 Let's Connect!
 
-Estou sempre aberto a discutir novos projetos, oportunidades de colaboração e desafios no universo da tecnologia. Vamos conversar!
+I'm always open to discussing new projects, collaboration opportunities, and interesting challenges in the tech world. Let's talk!
 
 <div align="center">
   <a href="mailto:rafael.fullstackdeveloper@gmail.com">
