@@ -2,7 +2,7 @@
 <p align="center">A special welcome! You can also <a href="README-pt.md">read my profile in Portuguese</a>. 🇧🇷</p>
 
 <div align="center">
-  <h3>Senior Full-Stack Developer | Python Specialist | Tech Lead</h3>
+  <h3>Full-Stack Python Django React Developer</h3>
 </div>
 
 <div align="center">
